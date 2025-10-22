@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Limkoking University Of Creative Technology Club Website</title>
+
+  <!-- Internal CSS -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #004080;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin-bottom: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      margin: 5px 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+      text-decoration: underline;
+    }
+
+    .contact-section {
+      padding: 60px 20px;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .contact-section h2 {
+      color: #004080;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .contact-section p {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #555;
+    }
+
+    form {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 500;
+      color: #004080;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+      resize: none;
+    }
+
+    button {
+      background-color: #004080;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: 0.3s ease;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #0066cc;
+    }
+
+    footer {
+      background-color: #004080;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 50px;
+    }
+
+    .success-message {
+      display: none;
+      text-align: center;
+      background: #e6f7e6;
+      color: #006600;
+      padding: 10px;
+      border-radius: 6px;
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 600px) {
+      form {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Contact Us</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="clubs.html">Clubs</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <h2>Get in Touch</h2>
+    <p>We’d love to hear from you! Fill out the form below and we’ll get back to you soon.</p>
+
+    <div class="success-message" id="successMessage"> Your message has been sent successfully!</div>
+
+    <form id="contactForm">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required />
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required />
+
+      <label for="club">Select Club:</label>
+      <select id="club" name="club" required>
+        <Option value="">--Select Club--</Option>
+        <Option value="Drama Club">Drama Club</Option>
+        <Option value="Tech Club">Tech club</Option>
+        <Option value="Debate Club">Debate Club</Option>
+        <Option value="Sports Club">Sports Club</Option>
+      </select>
+
+      <label for="message">Your Message:</label>
+      <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Limkoking University Of Creative Technology Club Website | Designed</p>
+  </footer>
+
+  <!-- Internal JavaScript -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const form = document.getElementById("contactForm");
+      const successMessage = document.getElementById("successMessage");
+
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        // Simple form validation
+        const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const club = document.getElementById("club").value.trim();
+        const message = document.getElementById("message").value.trim();
+        
+      
+
+
+        if (!name || !email || !message) {
+          alert(" Please fill in all fields.");
+          return;
+        }
+
+        // Display success message
+        successMessage.style.display = "block";
+
+        // Reset form fields
+        form.reset();
+
+        // Hide message after 4 seconds
+        setTimeout(() => {
+          successMessage.style.display = "none";
+        }, 4000);
+      });
+    });
+    <!-- Internal JavaScript -->
+    function joinClub(clubName) {
+      alert(`Thank you for your interest! You have successfully joined the ${clubName}.`);
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      console.log("Clubs page loaded successfully!");
+    });
+  </script>
+</body>
+</html>

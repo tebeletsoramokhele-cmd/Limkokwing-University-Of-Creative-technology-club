@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | Limkokwing University Of Creative Technology Club Website</title>
+
+  <!-- Internal CSS -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #004080;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin-bottom: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      margin: 5px 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+      text-decoration: underline;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(rgba(0, 64, 128, 0.8), rgba(0, 64, 128, 0.8)), url("images/college-campus.jpg") center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    .hero button {
+      background-color: white;
+      color: #004080;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: 0.3s ease;
+    }
+
+    .hero button:hover {
+      background-color: #e6e6e6;
+    }
+
+    /* About Section */
+    .about-section {
+      max-width: 900px;
+      margin: 60px auto;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .about-section h2 {
+      color: #004080;
+      margin-bottom: 15px;
+    }
+
+    .about-section p {
+      color: #555;
+      font-size: 1.1rem;
+    }
+
+    /* Club Highlights */
+    .clubs-section {
+      max-width: 1100px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    .clubs-section h2 {
+      color: #004080;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .club-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .club-card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      text-align: center;
+      transition: 0.3s ease;
+    }
+
+    .club-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .club-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .club-card h3 {
+      color: #004080;
+      margin: 15px 0 10px;
+    }
+
+    .club-card p {
+      padding: 0 15px 15px;
+      color: #555;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      background-color: #004080;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 700px) {
+      .hero h2 {
+        font-size: 2rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Limkoking University Of Creative Technology Club Website</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="clubs.html">Clubs</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Welcome to the Limkokwing University Of Creative Technology Club Community</h2>
+    <p>Discover, connect, and grow with our student clubs — where creativity, technology, and passion come alive.</p>
+    <button onclick="exploreClubs()">Explore Clubs</button>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-section">
+    <h2>About Our Clubs</h2>
+    <p>
+      Our college offers a vibrant selection of student-led clubs that cater to a wide range of interests — from drama and debate to technology and sports.  
+      These clubs provide an opportunity for students to express their talents, build leadership skills, and make lasting friendships.
+    </p>
+  </section>
+
+  <!-- Clubs Highlight Section -->
+  <section class="clubs-section">
+    <h2>Featured Clubs</h2>
+    <div class="club-grid">
+      <div class="club-card">
+        <img src="images/drama-club.jpg" alt="Drama Club" />
+        <h3>Drama Club</h3>
+        <p>Bringing stories to life through creativity and teamwork in theatre and performance.</p>
+      </div>
+
+      <div class="club-card">
+        <img src="images/tech-club.jpg" alt="Tech Club" />
+        <h3>Tech Club</h3>
+        <p>Exploring coding, robotics, and web development through innovation and collaboration.</p>
+      </div>
+
+      <div class="club-card">
+        <img src="images/debate-club.jpg" alt="Debate Club" />
+        <h3>Debate Club</h3>
+        <p>Sharpen your public speaking and argumentation skills in a supportive environment.</p>
+      </div>
+
+      <div class="club-card">
+        <img src="images/sports-club.jpg" alt="Sports Club" />
+        <h3>Sports Club</h3>
+        <p>Stay active and healthy through fun athletic events and inter-college competitions.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Limkoking University Of Creative Technology Club Website | Designed</p>
+  </footer>
+
+  <!-- Internal JavaScript -->
+  <script>
+    function exploreClubs() {
+      window.location.href = "clubs.html";
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      console.log("Home page loaded successfully!");
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Limkoking University Of Creative Technology Club Website</title>
+
+  <!-- Internal CSS -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #004080;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin-bottom: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      margin: 5px 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+      text-decoration: underline;
+    }
+
+    .about-section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .about-section h2 {
+      color: #004080;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .about-section p {
+      text-align: justify;
+      margin-bottom: 15px;
+    }
+
+    .mission-vision {
+      margin-top: 40px;
+    }
+
+    .mission-vision h3 {
+      color: #004080;
+      margin-bottom: 10px;
+    }
+
+    .team-section {
+      margin-top: 60px;
+      text-align: center;
+    }
+
+    .team-section h2 {
+      color: #004080;
+      margin-bottom: 20px;
+    }
+
+    .team-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      justify-items: center;
+    }
+
+    .team-card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 220px;
+    }
+
+    .team-card img {
+      width: 100%;
+      border-radius: 50%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .team-card h4 {
+      margin-top: 10px;
+      color: #004080;
+    }
+
+    .team-card p {
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    footer {
+      background-color: #004080;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>About Our College Clubs</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="clubs.html">Clubs</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <section class="about-section">
+    <h2>Who We Are</h2>
+    <p>
+      Our College Club community is a dynamic hub for students to explore their interests, develop leadership skills, and build lifelong friendships. We provide opportunities for students to engage in various clubs including Drama, Tech, Debate, and Sports.
+    </p>
+    <p>
+      Founded with the goal of fostering creativity, innovation, and teamwork, our clubs organize workshops, competitions, and social events that bring the student body together. Whether you’re passionate about technology, performance, athletics, or communication — there’s a place for you here.
+    </p>
+
+    <div class="mission-vision">
+      <h3>Our Mission</h3>
+      <p>
+        To empower students to pursue their passions through active participation in clubs and events, while promoting teamwork, growth, and inclusivity.
+      </p>
+
+      <h3>Our Vision</h3>
+      <p>
+        To build a vibrant campus culture where every student has the opportunity to learn, lead, and contribute to the community through meaningful club activities.
+      </p>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section class="team-section">
+    <h2>Meet Our Team</h2>
+    <div class="team-container">
+      <div class="team-card">
+        <img src="c:\Users\delll\OneDrive\Desktop\Thuly\IMG_20250415_130717~2.jpg" alt="Team Member" />
+        <h4>Lebohang Thaanyane</h4>
+        <p>Club Coordinator</p>
+      </div>
+
+      <div class="team-card">
+        <img src="c:\Users\delll\OneDrive\Desktop\Thuly\IMG-20240613-WA0587.jpg" alt="Team Member" />
+        <h4>Tebeletso Ramokhele</h4>
+        <p>Event Organizer</p>
+      </div>
+
+      <div class="team-card">
+        <img src="c:\Users\delll\OneDrive\Desktop\Thuly\IMG-20251007-WA0054.jpg" alt="Team Member" />
+        <h4>Ts'epang Lebeko</h4>
+        <p>Public Relations Officer</p>
+      </div>
+
+      <div class="team-card">
+        <img src="c:\Users\delll\OneDrive\Desktop\Kiddo\watermark-9a1160dae7ddeee672515af5308d8ed1_0.jpeg" alt="Team Member" />
+        <h4>Nthuseng Mokhomo</h4>
+        <p>Creative Designer</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Limkokwing University Of Creative Technology |Designed</p>
+  </footer>
+
+  <!-- Internal JS -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      console.log("About page loaded successfully!");
+    });
+  </script>
+</body>
+</html>

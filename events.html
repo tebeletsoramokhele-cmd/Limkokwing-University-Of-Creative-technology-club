@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Events | College Club Website</title>
+
+  <!-- Internal CSS -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #004080;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin-bottom: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      margin: 5px 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+      text-decoration: underline;
+    }
+
+    .events-section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .events-section h2 {
+      color: #004080;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .event-card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-bottom: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .event-card img {
+      width: 280px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .event-content {
+      flex: 1;
+    }
+
+    .event-content h3 {
+      color: #004080;
+      margin-bottom: 10px;
+    }
+
+    .event-content p {
+      margin-bottom: 10px;
+      text-align: justify;
+    }
+
+    .event-date {
+      background-color: #004080;
+      color: white;
+      display: inline-block;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-size: 0.9rem;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background-color: #004080;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 700px) {
+      .event-card {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .event-card img {
+        width: 100%;
+        height: 220px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Upcoming Events</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="clubs.html">Clubs</a></li>
+        <li><a href="events.html" class="active">Events</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Events Section -->
+  <section class="events-section">
+    <h2>What’s Happening This Semester</h2>
+
+    <!-- Drama Club Event -->
+    <div class="event-card" id="drama-event">
+      <img src="c:\Users\delll\OneDrive\Desktop\Kiddo\Anna-In-The-Tropics-Miami-New-Drama-Pictured-L-R-Saundra-Santiago-Gabriell-Salgado-Andrea-Ferro-Serafin-Falcon-Brandon-Espinoza-Hannia-Guillen-Daniel-Capote-Photo-by-Andres-Manner-900x600.jpg" alt="Drama Event" />
+      <div class="event-content">
+        <span class="event-date"> November 10, 2025</span>
+        <h3>Annual Drama Showcase</h3>
+        <p>
+          Join us for an evening of creativity and performance as the Drama Club presents its annual stage production, featuring original student-written plays and monologues.
+        </p>
+        <p><strong>Location:</strong> Multipurpose Hall 3</p>
+      </div>
+    </div>
+
+    <!-- Tech Club Event -->
+    <div class="event-card" id="tech-event">
+      <img src="c:\Users\delll\OneDrive\Desktop\Kiddo\Digital-Influencing-Strategies-1536x878.jpg" alt="Tech Event" />
+      <div class="event-content">
+        <span class="event-date"> November 15, 2025</span>
+        <h3>Innovation Hackathon</h3>
+        <p>
+          The Tech Club invites all coders and designers to participate in a 24-hour hackathon. Teams will build innovative solutions using AI and IoT to solve real-world challenges.
+        </p>
+        <p><strong>Location:</strong> Multimedia 3</p>
+      </div>
+    </div>
+
+    <!-- Debate Club Event -->
+    <div class="event-card" id="debate-event">
+      <img src="c:\Users\delll\OneDrive\Desktop\Kiddo\debate-event-pro-con-speakers-jpg-y2ei3q7m2mg6vvgx.jpg" alt="Debate Event" />
+      <div class="event-content">
+        <span class="event-date"> November 22, 2025</span>
+        <h3>Inter-College Debate Competition</h3>
+        <p>
+          The Debate Club will host regional teams from local universities to engage in competitive discussions on current global issues. Come support your favorite debaters!
+        </p>
+        <p><strong>Location:</strong> Lecture Hall 5</p>
+      </div>
+    </div>
+
+    <!-- Sports Club Event -->
+    <div class="event-card" id="sports-event">
+      <img src="c:\Users\delll\OneDrive\Desktop\Kiddo\OIP (2).webp" alt="Sports Event" />
+      <div class="event-content">
+        <span class="event-date"> November 28, 2025</span>
+        <h3>College Sports Day</h3>
+        <p>
+          A day filled with athletic fun and competition! Participate in football, athletics, and relay races — prizes and medals for top performers.
+        </p>
+        <p><strong>Location:</strong> Limkokwing Sports Field</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Limkokwing University Of Creative Technology Club Website | Designed</p>
+  </footer>
+
+  <!-- Internal JavaScript -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      console.log("Events page loaded successfully!");
+      // Simple fade-in animation
+      document.querySelectorAll(".event-card").forEach((card, index) => {
+        card.style.opacity = "0";
+        setTimeout(() => {
+          card.style.transition = "opacity 1s ease";
+          card.style.opacity = "1";
+        }, 300 * index);
+      });
+    });
+  </script>
+</body>
+</html>
